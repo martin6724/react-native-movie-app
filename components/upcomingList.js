@@ -37,36 +37,37 @@ export default class UpcomingList extends Component {
 const styles = StyleSheet.create({
 container: {
   width: 350,
-  height: 180,
+  height: 200,
   marginRight: 20
 },
 wrapper: {
   borderRadius: 6,
   zIndex: 1,
   width: 320,
-  height: 160
+  height: 250
 },
-overlay: {
-  position: 'absolute',
-  top: 0,
-  left: 0,
-  width: 320,
-  height: 160,
-  opacity: 0.3,
-  zIndex: 2
-},
+// overlay: {
+//   position: 'absolute',
+//   top: 0,
+//   left: 0,
+//   width: 340,
+//   height: 250,
+//   opacity: 0.3,
+//   zIndex: 2
+// },
 title: {
   fontSize: 20,
   color: WHITE,
   position: 'absolute',
+  textAlign: 'center',
   bottom: 20,
   right: 20,
   zIndex: 3
 },
 img: {
   backgroundColor: 'rgb(230, 230, 230)',
-  width: 320,
-  height: 160,
+  width: 340,
+  height: 250,
   zIndex: 1,
 },
 imgshadow: {
@@ -74,13 +75,13 @@ imgshadow: {
   left: 16,
   backgroundColor: '#000',
   opacity: 0.5,
-  width: 293,
-  height: 144,
+  width: 320,
+  height: 225,
   zIndex: 0,
   position: 'absolute',
   shadowOffset: {
-    width: 0,
-    height: 4,
+    width: 3,
+    height: 6,
   },
   shadowOpacity: 1,
   shadowRadius: 9

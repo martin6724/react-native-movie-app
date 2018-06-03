@@ -20,7 +20,7 @@ export default class NowListItem extends Component {
       <TouchableOpacity style={styles.container}>
         <View style={styles.wrapper}>
         <Image source={{uri: `${Services.imageUrl}w500${poster_path}`}} style={styles.img}/>
-          <LinearGradient colors={[ORANGE, PINK]} style={styles.overlay}/>
+          // <LinearGradient colors={[ORANGE, PINK]} style={styles.overlay}/>
           <Text style={styles.title}>{title}</Text>
           <View STYLE={styles.imgshadow}></View>
         </View>
@@ -36,7 +36,7 @@ container: {
   height: 280,
   marginRight: 5,
   justifyContent: 'center',
-  alignItems: 'center',
+  // alignItems: 'center',
   // overflow: 'scroll'
 
 },
@@ -44,19 +44,19 @@ wrapper: {
   borderRadius: 6,
   zIndex: 1,
   width: 320,
-  height: 160
+  height: 210,
 },
 overlay: {
   position: 'absolute',
   top: 0,
   left: 0,
   width: 150,
-  height: 200,
+  height: 210,
   opacity: 0.3,
   zIndex: 2
 },
 title: {
-  fontSize: 20,
+  fontSize: 10,
   color: WHITE,
   position: 'absolute',
   bottom: 20,
@@ -66,23 +66,23 @@ title: {
 img: {
   backgroundColor: 'rgb(230, 230, 230)',
   width: 150,
-  height: 200,
+  height: 210,
   zIndex: 1,
-},
-imgshadow: {
-  top: 20,
-  left: 8,
-  backgroundColor: '#000',
-  opacity: 0.5,
-  width: 150,
-  height: 200,
-  zIndex: 0,
-  position: 'absolute',
-  shadowOffset: {
-    width: 0,
-    height: 4,
-  },
-  shadowOpacity: 1,
-  shadowRadius: 9
 }
+// imgshadow: {
+//   top: 20,
+//   left: 8,
+//   backgroundColor: '#000',
+//   opacity: 0.5,
+//   width: 170,
+//   height: 200,
+//   zIndex: 0,
+//   position: 'absolute',
+//   shadowOffset: {
+//     width: 0,
+//     height: 4,
+//   },
+//   shadowOpacity: 1,
+//   shadowRadius: 9
+// }
 });
