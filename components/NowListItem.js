@@ -32,11 +32,12 @@ export default class NowListItem extends Component {
 
 const styles = StyleSheet.create({
 container: {
-  width: 320,
+  width: 150,
   height: 280,
-  marginRight: 20,
+  marginRight: 5,
   justifyContent: 'center',
   alignItems: 'center',
+  // overflow: 'scroll'
 
 },
 wrapper: {
@@ -49,8 +50,8 @@ overlay: {
   position: 'absolute',
   top: 0,
   left: 0,
-  width: 320,
-  height: 160,
+  width: 150,
+  height: 200,
   opacity: 0.3,
   zIndex: 2
 },
@@ -64,8 +65,8 @@ title: {
 },
 img: {
   backgroundColor: 'rgb(230, 230, 230)',
-  width: 320,
-  height: 160,
+  width: 150,
+  height: 200,
   zIndex: 1,
 },
 imgshadow: {
@@ -73,8 +74,8 @@ imgshadow: {
   left: 8,
   backgroundColor: '#000',
   opacity: 0.5,
-  width: 123,
-  height: 185,
+  width: 150,
+  height: 200,
   zIndex: 0,
   position: 'absolute',
   shadowOffset: {

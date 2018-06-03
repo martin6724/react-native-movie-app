@@ -22,7 +22,9 @@ export default class MovieList extends Component {
    upcoming: [
      {id:0, title: ''},
      {id:1, title: ''},
-     {id:2, title: ''}
+     {id:2, title: ''},
+     {id:3, title: ''},
+     {id:4, title: ''}
    ]
  }
 componentDidMount() {
@@ -31,7 +33,7 @@ componentDidMount() {
   })
 }
 
- componentWillUpdate(){
+ componentWillUpdate() {
    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
  }
 
@@ -44,7 +46,7 @@ componentDidMount() {
 
  render() {
    return (
-     <ScrollView style={styles.container}>
+     <View style={styles.container}>
        <Text style={styles.title}>MOVIES</Text>
        <FlatList
          data={this.state.upcoming}
@@ -53,7 +55,7 @@ componentDidMount() {
          renderItem={this.renderUpcoming}
          horizontal
        />
-       <View style={styles.listcontainer}>
+       <ScrollView style={styles.listcontainer}>
        <Text>NOW PLAYING</Text>
        <FlatList
          data={this.state.upcoming}
@@ -62,8 +64,8 @@ componentDidMount() {
          renderItem={this.renderNowPlaying}
          horizontal
          />
-     </View>
      </ScrollView>
+     </View>
    );
  }
 
@@ -80,7 +82,7 @@ const styles = StyleSheet.create({
  title: {
    fontSize: 24,
    fontWeight: '600',
-   marginTop: 80,
+   marginTop: 30,
  },
 
 });
